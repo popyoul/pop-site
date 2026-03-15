@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop's Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+
+        /* Banner / Header */
+        .banner {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            border-bottom: 2px solid #333;
+        }
+
+        .logo-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #fff;
+            flex-shrink: 0;
+            background: #222;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner-title {
+            margin-left: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* About Section */
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #333;
+            color: #fff;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        /* Showcase Grid */
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .showcase-card {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .showcase-card:hover {
+            transform: translateY(-5px);
+            border-color: #555;
+        }
+
+        .showcase-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .showcase-card p {
+            color: #999;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner with Logo -->
+    <div class="banner">
+        <div class="logo-container">
+            <img id="logo-img" src="" alt="Logo">
+        </div>
+        <div class="banner-title">POP</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <div class="section">
+            <h2>About</h2>
+            <p class="about-text">
+                Hey, I'm Pop. I play guitar, love motorcycles, and I'm into nu metal.
+                This is my little corner of the internet.
+            </p>
+        </div>
+
+        <!-- Showcase Section -->
+        <div class="section">
+            <h2>What I'm Into</h2>
+            <div class="showcase-grid">
+                <div class="showcase-card">
+                    <h3>🎸 Guitar</h3>
+                    <p>Electric guitar, nu metal style. Into Korn, System of a Down, Deftones.
+                    Been playing for a while now — love that heavy, chunky sound.</p>
+                </div>
+                <div class="showcase-card">
+                    <h3>🏍️ Motorcycles</h3>
+                    <p>Love motorcycles. There's something about the freedom of the road,
+                    the rumble of an engine, the thrill of riding.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Pop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Set default logo if none provided
+        const logoImg = document.getElementById('logo-img');
+        if (!logoImg.src || logoImg.src === window.location.href) {
+            // Placeholder - user can replace with their own image
+            logoImg.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
