@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examples - Popyoul's Websites</title>
+    <title>About - Popyoul's Websites</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             background-color: #0F172A;
-            color: #fff;
+            color: #F1F5F9;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             min-height: 100vh;
         }
@@ -27,7 +27,7 @@
             align-items: flex-start;
             justify-content: center;
             padding-top: 80px;
-            border-bottom: 2px solid #fff;
+            border-bottom: 2px solid #334155;
             position: relative;
         }
 
@@ -39,7 +39,7 @@
             border-radius: 50%;
             overflow: hidden;
             border: 3px solid #fff;
-            background: #0F172A;
+            background: #1e293b;
             z-index: 10;
         }
 
@@ -55,12 +55,13 @@
             font-weight: bold;
             letter-spacing: 2px;
             text-align: center;
+            color: #F1F5F9;
         }
 
         /* Navigation */
         nav {
             background: #0F172A;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid #334155;
             padding: 0;
         }
 
@@ -73,7 +74,7 @@
         }
 
         nav a {
-            color: #fff;
+            color: #F1F5F9;
             text-decoration: none;
             font-size: 1.1rem;
             padding: 10px 20px;
@@ -81,76 +82,32 @@
             transition: background 0.3s ease;
         }
 
-        nav a:hover { background: #1e293b; }
-
         nav a:hover {
-            background: #333;
+            background: #1e293b;
         }
 
         /* Main Content */
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
-        .page-title {
-            font-size: 1.8rem;
-            margin-bottom: 30px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #fff;
-            color: #fff;
-        }
-
-        /* Examples Grid */
-        .examples-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .example-card {
-            background: #0F172A;
-            border: 1px solid #333;
-            border-radius: 10px;
-            padding: 20px;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .example-card:hover {
-            transform: translateY(-5px);
-            border-color: #555;
-        }
-
-        .example-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: #fff;
-        }
-
-        .example-card p {
+        .about-content {
+            font-size: 1.2rem;
+            line-height: 1.8;
             color: #F1F5F9;
-            line-height: 1.6;
         }
 
-        .example-card .placeholder {
-            width: 100%;
-            height: 150px;
-            background: #0F172A;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #555;
-            margin-bottom: 15px;
-            font-size: 0.9rem;
+        .about-content p {
+            margin-bottom: 20px;
         }
 
         /* Footer */
         footer {
             text-align: center;
             padding: 40px;
-            border-top: 1px solid #333;
+            border-top: 1px solid #334155;
             color: #F1F5F9;
             font-size: 0.9rem;
         }
@@ -169,38 +126,24 @@
     <nav>
         <ul>
             <li><a href="https://popyoul.github.io/pop-site/">Home</a></li>
+            <li><a href="https://popyoul.github.io/pop-site/about.html">About</a></li>
             <li><a href="https://popyoul.github.io/pop-site/examples.html">Examples</a></li>
             <li><a href="https://popyoul.github.io/pop-site/contact.html">Contact</a></li>
-            <li><a href="https://popyoul.github.io/pop-site/about.html">About</a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
     <div class="container">
-        <h2 class="page-title">My Work</h2>
-        
-        <div class="examples-grid">
-            <div class="example-card">
-                <div class="placeholder">Your Image Here</div>
-                <h3>Project One</h3>
-                <p>Description of your first project goes here. Tell visitors what you built and what makes it cool.</p>
-            </div>
-            <div class="example-card">
-                <div class="placeholder">Your Image Here</div>
-                <h3>Project Two</h3>
-                <p>Description of your second project goes here. You can add as many projects as you want.</p>
-            </div>
-            <div class="example-card">
-                <div class="placeholder">Your Image Here</div>
-                <h3>Project Three</h3>
-                <p>Description of your third project goes here. Just copy and paste this card to add more.</p>
-            </div>
+        <div class="about-content">
+            <p>At Popyoul's websites, we believe a website should do more than just look pretty—it should work for you. In a digital landscape that's constantly shifting, we bridge the gap between stunning design and data-backed visibility.</p>
+
+            <p>We specialize in building high-performance websites and crafting SEO strategies that don't just increase traffic, but attract the right audience. Whether you're launching a new brand or reviving an existing one, our mission is simple: to make sure your business is seen, heard, and chosen.</p>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Popyoul. All rights reserved.</p>
+        <p>© 2026 Popyoul's Websites. All rights reserved.</p>
     </footer>
 
     <script>
